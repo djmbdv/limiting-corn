@@ -9,6 +9,7 @@ Mi solucion al caso tecnico
 ## App
 
 > npm install
+
 > npm run dev
 
 Detalles de mi solucion:
