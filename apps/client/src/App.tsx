@@ -5,21 +5,21 @@ import { Separator } from "./components/ui/separator";
 const API_URL = import.meta.env.VITE_API_URL || "//localhost:3000";
 
 interface CounterState {
-  sucess: number;
+  success: number;
   failed: number;
 }
 
 type CounterAction = { type: "success" } | { type: "failed" };
 
 const initialState: CounterState = {
-  sucess: 0,
+  success: 0,
   failed: 0,
 };
 
 const reducer = (state: CounterState, action: CounterAction): CounterState => {
   switch (action.type) {
     case "success":
-      return { ...state, sucess: state.sucess + 1 };
+      return { ...state, success: state.success + 1 };
     case "failed":
       return { ...state, failed: state.failed + 1 };
     default:
@@ -28,7 +28,7 @@ const reducer = (state: CounterState, action: CounterAction): CounterState => {
 };
 
 function App() {
-  const [{ sucess, failed }, counterDispatch] = useReducer(
+  const [{ success, failed }, counterDispatch] = useReducer(
     reducer,
     initialState
   );
@@ -57,11 +57,11 @@ function App() {
         </div>
         <Separator className="my-4" />
         <div className="flex h-5 items-center space-x-4 text-sm">
-          <div>Succes {sucess}</div>
+          <div>Succes {success}</div>
           <Separator orientation="vertical" />
           <div>Failed {failed} </div>
           <Separator orientation="vertical" />
-          <div>Total {failed + sucess} </div>
+          <div>Total {failed + success} </div>
         </div>
         {lastMessage.length > 0 && (
           <div className="ease-in-out duration-300">
