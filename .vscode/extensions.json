@@ -1,0 +1,16 @@
+{
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"foxundermoon.shell-format",
+		"dbaeumer.vscode-eslint",
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"GitHub.vscode-github-actions",
+		"shardulm94.trailing-spaces",
+		"ms-azuretools.vscode-docker",
+		"usernamehw.errorlens",
+		"wix.vscode-import-cost",
+		"DavidAnson.vscode-markdownlint",
+		"streetsidesoftware.code-spell-checker",
+	]
+}
