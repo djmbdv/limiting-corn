@@ -1,6 +1,6 @@
 # Bob’s corn solution
 
-Mi solucion del caso tecnico
+Mi solucion al caso tecnico
 
 ## Database
 
